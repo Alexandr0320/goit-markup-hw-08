@@ -1,0 +1,28 @@
+@import "../scss/utils/variables";
+@import "../scss/utils/visually-hidden";
+
+@import "../scss/base/reset-styles";
+
+@import "../scss/layout/body";
+@import "../scss/layout/container";
+@import "../scss/layout/page-header";
+@import "../scss/layout/footer";
+
+@import "../scss/components/logotype";
+@import "../scss/components/navigation-list";
+@import "../scss/components/contacts-header";
+@import "../scss/components/hero";
+@import "../scss/components/button-hero";
+@import "../scss/components/advantage";
+@import "../scss/components/occupation";
+@import "../scss/components/team";
+@import "../scss/components/socials-icons";
+@import "../scss/components/clients-list";
+@import "../scss/components/address";
+@import "../scss/components/footer-form";
+@import "../scss/components/backdrop";
+@import "../scss/components/modal-form-hero";
+@import "../scss/components/modal";
+
+@import "../scss/components/portfolio-filters";
+@import "../scss/components/portfolio-menu";

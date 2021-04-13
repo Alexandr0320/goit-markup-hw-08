@@ -1,0 +1,44 @@
+.occupation {
+  padding-bottom: var(--section-pb);
+}
+
+.occupation__list {
+  display: flex;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.occupation__item {
+  position: relative;
+
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.occuation__title {
+  color: var(--accent-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.occupation__development {
+  position: absolute;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+
+  width: 100%;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: var(--items-studio-bg);
+  color: var(--background-color);
+}

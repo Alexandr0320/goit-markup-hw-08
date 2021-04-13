@@ -1,0 +1,37 @@
+.address {
+  padding-top: 20px;
+}
+
+.address__connection {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: inherit;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__maps {
+  color: var(--background-color);
+  font-size: 14px;
+  line-height: 1.71;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__item {
+  font-size: 14px;
+  line-height: 1.71;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
