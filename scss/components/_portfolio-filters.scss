@@ -1,18 +1,32 @@
-.filters {
-  padding-top: var(--section-pt);
-  padding-bottom: var(--section-pb);
-}
-
 .filters__list {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
   display: flex;
-  justify-content: center;
-
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-top: -15px;
+  // justify-content: flex-start;
 }
 
-.filters__item:not(:last-child) {
-  margin-right: 8px;
+.filters__item {
+  margin-left: 8px;
+  margin-top: 15px;
 }
+
+// @media screen and (min-width: 1200px) {
+
+// }
+// .filters__list {
+//   display: flex;
+//   justify-content: center;
+
+//   margin-bottom: 50px;
+// }
+
+// .filters__item:not(:last-child) {
+//   margin-right: 8px;
+// }
 
 .filters__choice {
   font-family: inherit;
