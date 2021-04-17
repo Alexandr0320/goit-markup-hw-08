@@ -4,86 +4,61 @@
     flex-direction: column;
     margin-left: 84px;
   }
-}
-@media screen and (min-width: 768px) {
+
   .connection__item:not(:last-child) {
     margin-bottom: 10px;
   }
+}
 
-  .connection__link {
-    display: flex;
-    align-items: center;
+.connection__link {
+  display: flex;
+  align-items: center;
 
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
 
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
-  }
-
-  .connection__icon {
-    width: 14px;
-    height: 14px;
-    margin-right: 10px;
-    align-items: center;
-    fill: var(--primary-text-color);
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .connection__link:hover &,
-    .connection__link:focus & {
-      fill: var(--accent-color);
-    }
-  }
-  .outline {
-    outline: 1px solid #ececec;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 }
+
+.connection__icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  align-items: center;
+  fill: var(--primary-text-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .connection__link:hover &,
+  .connection__link:focus & {
+    fill: var(--accent-color);
+  }
+}
+.outline {
+  outline: 1px solid #ececec;
+}
+
 @media screen and (min-width: 1200px) {
-  // .connection__item {
-  //   .connection__list & + & {
-  //     margin-left: 50px;
-  //   }
-  // }
+  .connection__list {
+    display: flex;
+    margin-left: 305px;
+  }
 }
 
-// .connection__link {
-//   display: flex;
-//   align-items: center;
+.connection__item:not(:last-child) {
+  margin-right: 30px;
+}
 
-//   color: var(--primary-text-color);
-
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   text-align: center;
-
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
-
-// .connection__icon {
-//   margin-right: 10px;
-//   align-items: center;
-//   fill: var(--primary-text-color);
-
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   .connection__link:hover &,
-//   .connection__link:focus & {
-//     fill: var(--accent-color);
-//   }
-// }
+.connection__link {
+  font-size: 14px;
+  line-height: 1.14;
+}

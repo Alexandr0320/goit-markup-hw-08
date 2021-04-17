@@ -1,22 +1,29 @@
 .footer {
   background-color: var(--color-footer);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer__container {
-  display: flex;
-  align-items: baseline;
+  padding-top: var(--section-pt-mobile);
+  padding-bottom: var(--section-pt-mobile);
 }
 
 .footer__box {
   margin-bottom: var(--section-pb-mobile);
-  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__link {
   display: inline-block;
-  margin-bottom: var(--title-padding);
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: var(--title-padding);
+  }
+}
+
+.icon-footer {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: var(--section-pt);
+  }
 }
 
 .join-us {
@@ -24,9 +31,28 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
 
   color: var(--background-color);
 
-  margin-bottom: 20px;
+  margin-bottom: var(--title-padding);
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    margin-right: 70px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+  }
 }

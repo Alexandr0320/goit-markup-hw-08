@@ -8,16 +8,11 @@
 }
 
 @media screen and (min-width: 1200px) {
-  font-size: 26px;
-  line-height: 1.19;
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
-// .logo {
-//   color: var(--accent-color);
-//   font-family: "Raleway", sans-serif;
-
-//   font-weight: bold;
-
-// }
 
 .logo__header {
   color: var(--accent-text-color);
