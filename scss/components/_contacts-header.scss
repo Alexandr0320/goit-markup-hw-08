@@ -52,13 +52,13 @@
     display: flex;
     margin-left: 305px;
   }
-}
 
-.connection__item:not(:last-child) {
-  margin-right: 30px;
-}
+  .connection__item:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.connection__link {
-  font-size: 14px;
-  line-height: 1.14;
+  .connection__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }

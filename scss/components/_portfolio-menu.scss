@@ -4,7 +4,11 @@
 }
 
 .card__item {
-  margin-top: var(--padding-mobile);
+  @media screen and (max-width: 767px) {
+    &:not(:first-child) {
+      margin-top: var(--padding-mobile);
+    }
+  }
 
   border: 1px solid #eeeeee;
 }
@@ -71,14 +75,15 @@
 
 @media screen and (min-width: 768px) {
   .card__list {
-    margin-left: -30px;
-    margin-top: -30px;
+    margin-top: calc(-1 * var(--padding-mobile));
+    margin-left: calc(-1 * var(--padding-mobile));
   }
   .card__list {
     display: flex;
     flex-wrap: wrap;
   }
   .card__item {
+    margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc(100% / 2 - var(--padding-mobile));
   }
@@ -92,84 +97,5 @@
 
   .card__item {
     flex-basis: calc(100% / 3 - var(--padding-mobile));
-    margin-left: var(--padding-mobile);
   }
 }
-
-// }
-
-// .card__list {
-//   display: flex;
-//   flex-wrap: wrap;
-
-//   margin-left: calc(-1 * var(--padding-mobile));
-//   margin-top: calc(-1 * var(--padding-mobile));
-// }
-
-// .card__item {
-//   flex-basis: calc(100% / 3 - var(--padding-mobile));
-//   margin-left: var(--padding-mobile);
-//   margin-top: var(--padding-mobile);
-
-//   border: 1px solid #eeeeee;
-// }
-
-// .card__link {
-//   display: block;
-//   color: var(--primary-text-color);
-//   font-family: "Roboto", sans-serif;
-//   font-size: 16px;
-//   line-height: 1.87;
-
-//   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     box-shadow: var(--portfolio-card-shadow);
-//     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-// }
-
-// .card__thumb {
-//   position: relative;
-//   overflow: hidden;
-// }
-
-// .card__overlay {
-//   position: absolute;
-
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-//   padding: 63px 24px;
-//   color: var(--background-color);
-//   overflow: hidden;
-
-//   font-size: 18px;
-//   line-height: 1.56;
-
-//   background-color: rgba(33, 150, 243, 0.9);
-
-//   transform: translateY(100%);
-//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   .card__link:hover &,
-//   .card__link:focus & {
-//     transform: translateY(0);
-//     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-// }
-
-// .card__content {
-//   padding: var(--title-padding);
-// }
-
-// .card__title {
-//   color: var(--title-text-color);
-//   font-family: "Roboto", sans-serif;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 18px;
-//   line-height: 2;
-//   letter-spacing: 0.06em;
-// }

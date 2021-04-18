@@ -19,7 +19,11 @@
 
   overflow: hidden;
 
-  margin-bottom: var(--padding-mobile);
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: var(--padding-mobile);
+    }
+  }
 }
 
 .team__box {
@@ -79,7 +83,5 @@
 
   .team__item {
     flex-basis: calc(100% / 4 - var(--padding-mobile));
-    margin-left: var(--padding-mobile);
-    margin-top: var(--padding-mobile);
   }
 }
